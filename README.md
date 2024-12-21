@@ -12,18 +12,30 @@ This project runs completely local, or inside of a devcontainer or Github Codesp
 3. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -l`
 4. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
 5. Go to the `transform-with-dbt` folder and run  `uv run dbt seed`
-6. Go to the `transform-with-dbt` folder and run  `uv run dbt build` 
+6. Go to the `transform-with-dbt` folder and run  `uv run dbt build`
+
+
+## Project Structure
+Each part of the project has a dedicated folder:
+1. **transform-with-dbt** folder
+  a. It is inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
+2. **create-reports-with-evidence** folder
+  a. From inside this folder you can launch the commands to launch [Evidence](https://evidence.dev/) dashboards
+3. **extract-and-load-with-python** folder
+  a. You need to be inside this folder to launch the Extraction and Load script (el.py) that will get github public data into the local Data Warehouse
+4. Inside the **store-and-compute-with-duckdb** is where all the files of the Local duckDB Data Warehouse will be stored.
+5. The **data-landing-zone** folder will be used for temporarily storing the raw github data, before loading it into the Data Warehouse.
 
 
 ## Setup
 
 There are a few steps to get started with this project if you want to develop locally. We'll need to:
 
-1. [Clone the project locally](#clone-the-project-locally-).
-2. [Insatll uv (python), then install the dependencies and other tooling](#-python-).
-3. [Extract and load the data locally](#-extract-and-load-).
-4. [Transform the data with dbt](#%EF%B8%8F-transform-the-data-with-dbt-).
-5. [Build the BI platform with Evidence](#-build-the-bi-platform-with-evidence-).
+1. [Clone the project locally](#clone-the-project-locally).
+2. [Insatll uv (python), then install the dependencies and other tooling](#python).
+3. [Extract and load the data locally](#extract-and-load).
+4. [Transform the data with dbt](#transform-the-data-with-dbt).
+5. [Build the BI platform with Evidence](#build-the-bi-platform-with-evidence).
 
 
 ### Clone the project locally
