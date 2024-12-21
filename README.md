@@ -18,7 +18,7 @@ This project runs completely local, or inside of a devcontainer or Github Codesp
 ## Project Structure
 Each part of the project has a dedicated folder:
 1. **transform-with-dbt** folder
-    - It is inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
+    - It is from inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
 2. **create-reports-with-evidence** folder
     - From inside this folder you can launch the commands to launch [Evidence](https://evidence.dev/) dashboards
 3. **extract-and-load-with-python** folder
