@@ -4,7 +4,7 @@ This project will be used to help train aspiring Analytics Engineers on the fund
 
 This repo has been forked from [gwenwindflower's](https://github.com/gwenwindflower) [octocatalog](https://github.com/gwenwindflower/octocatalog): an open-source, open-data data-platform-in-a-box[^1] based on [DuckDB](https://duckdb.org/) + [dbt](https://www.getdbt.com/) + [Evidence](https://evidence.dev/).
 
-It offers a simple script to extract and load (EL) data from the [GitHub Archive](https://www.gharchive.org/), a dbt project built on top of this data inside a DuckDB database (and including the [jaffle shop](https://github.com/dbt-labs/jaffle-shop)'s sandbox data and models), and BI tooling via Evidence to analyze and present the data.
+It offers a simple python script to extract and load (EL) data from the [GitHub Archive](https://www.gharchive.org/), a dbt project built on top of this data inside a DuckDB database (and including the [jaffle shop](https://github.com/dbt-labs/jaffle-shop)'s sandbox data and models), and BI tooling via Evidence to analyze and present the data.
 
 This project can run completely local, or inside of a devcontainer or Github Codespaces.
 
