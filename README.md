@@ -17,14 +17,16 @@ This project can run completely local, or inside of a devcontainer or Github Cod
 
 ## Project Structure
 Each part of the project has a dedicated folder:
-1. **transform-with-dbt** folder
+1. The **transform-with-dbt** folder
+    - Contains the dbt project
     - It is from inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
-2. **create-reports-with-evidence** folder
-    - From inside this folder you can run the commands to launch [Evidence](https://evidence.dev/) dashboards
-3. **extract-and-load-with-python** folder
+3. The **create-reports-with-evidence** folder
+    - Contains the [Evidence](https://evidence.dev/) project
+    - From inside this folder you can run the commands to launch the Evidence BI dashboards
+5. The **extract-and-load-with-python** folder
     - You need to be inside this folder to run the _Extract and Load_ script (_el.py_) that will get public GitHub data into the local DuckDB Data Warehouse
-4. Inside the **store-and-compute-with-duckdb** is where the Local DuckDB Data Warehouse will be stored (_duckdb_data_store.db_)
-5. The **data-landing-zone** folder will be used for temporarily storing the raw GitHub data, before loading it into the Local DuckDB Data Warehouse
+6. The **store-and-compute-with-duckdb** is where the Local DuckDB Data Warehouse will be stored (_duckdb_data_store.db_)
+7. The **data-landing-zone** folder will be used for temporarily storing the raw GitHub data, before loading it into the Local DuckDB Data Warehouse
 
 
 ## Setup
