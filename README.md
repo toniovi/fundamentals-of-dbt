@@ -10,7 +10,8 @@ This project runs completely local, or inside of a devcontainer.
 2. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -e`
 3. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -l`
 4. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
-5. Go to the `transform-with-dbt` folder and run  `uv run dbt build` 
+5. Go to the `transform-with-dbt` folder and run  `uv run dbt seed`
+6. Go to the `transform-with-dbt` folder and run  `uv run dbt build` 
 
 
 ## Setup
