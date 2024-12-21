@@ -15,6 +15,7 @@ This project can run completely local, or inside [dev containers](https://contai
 4. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
 5. Go to the `transform-with-dbt` folder and run  `uv run dbt seed`
 6. Go to the `transform-with-dbt` folder and run  `uv run dbt build`
+7. Go to the `create-reports-with-evidence` folder and run  `npm install && npm run sources && npm run dev -- --host 0.0.0.0`
 
 
 ## Project Structure
