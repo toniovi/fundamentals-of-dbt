@@ -1,0 +1,54 @@
+version: "3"
+
+tasks:
+
+  install_project_dependencies_in_docker_container:
+      # Install uv
+      - |
+        curl -LsSf https://astral.sh/uv/install.sh | sudo env XDG_BIN_HOME="/usr/local/bin" sh
+
+      - echo 'Successfully installed project dependencies in docker container'
+
+  setup:
+    - |
+      cd extract-and-load-with-python
+      uv run python el.py -el
+    - |
+      cd transform-with-dbt
+      uv run dbt deps
+      uv run dbt build
+    - |
+      cd create-reports-with-evidence
+      npm install
+      npm run sources
+      npm run dev
+
+  extract:
+    cmds:
+      - |
+        cd extract-and-load-with-python
+        uv run python el.py -e {{.start}} {{.end}}
+  load:
+    cmds:
+      - |
+        cd extract-and-load-with-python
+        uv run python el.py -l {{.start}} {{.end}}
+
+  transform:
+    cmds:
+      - |
+        cd transform-with-dbt
+        uv run dbt build
+  transform-prod:
+    cmds:
+      - |
+        cd transform-with-dbt
+        uv run dbt build --target prod
+
+  bi:
+    cmds:
+      - |
+        cd create-reports-with-evidence
+        npm run sources
+        npm run dev
+

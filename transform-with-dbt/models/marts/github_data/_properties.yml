@@ -1,0 +1,13 @@
+models:
+  - name: users
+    columns:
+      - name: actor_id
+        tests:
+          - not_null
+          - unique
+  - name: repos
+    columns:
+      - name: repo_id
+        tests:
+          - not_null
+          - unique

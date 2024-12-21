@@ -1,0 +1,8 @@
+# This file was automatically generated
+type: duckdb
+name: duckdb_data_store
+options:
+  filename: ../../../store-and-compute-with-duckdb/duckdb_data_store.db
+# Advanced Options, you probably don't want to change this
+buildOptions:
+  batchSize: 1000000

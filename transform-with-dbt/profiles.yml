@@ -1,0 +1,11 @@
+duckdb_data_store:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../store-and-compute-with-duckdb/duckdb_data_store.db
+      schema: dbt_dev
+    prod:
+      type: duckdb
+      path: ../store-and-compute-with-duckdb/duckdb_data_store.db
+      schema: dbt_prod
+  target: prod

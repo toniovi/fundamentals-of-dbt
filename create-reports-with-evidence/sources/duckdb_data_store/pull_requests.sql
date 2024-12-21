@@ -1,0 +1,1 @@
+select * from dbt_prod.pull_request_events limit 20000;
