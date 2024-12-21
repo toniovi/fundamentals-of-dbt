@@ -9,7 +9,7 @@ It offers a simple python script to extract and load (EL) data from the [GitHub 
 This project can run completely local, or inside [dev containers](https://containers.dev/) or [Github Codespaces](https://github.com/features/codespaces).
 
 ## Quickstart
-1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (already installed if you're using _Github Codespaces_ or _VS Code Devcontainers_)
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (already installed if you're using _Github Codespaces_ or _Dev containers_)
 2. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -e`
 3. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -l`
 4. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
