@@ -7,6 +7,14 @@ tasks:
       - |
         curl -LsSf https://astral.sh/uv/install.sh | sudo env XDG_BIN_HOME="/usr/local/bin" sh
 
+      # Install node
+      - |
+        # installs nvm (Node Version Manager)
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+      - |
+        # download and install Node.js (you may need to restart the terminal)
+        nvm install 20
+
       - echo 'Successfully installed project dependencies in docker container'
 
   setup:

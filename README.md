@@ -17,12 +17,13 @@ This project can run completely local, or inside [dev containers](https://contai
 6. Go to the `transform-with-dbt` folder and run  `uv run dbt build`
 7. Go to the `create-reports-with-evidence` folder and run  `npm install && npm run sources && npm run dev -- --host 0.0.0.0`
 
+_Or in one commmand: `cd extract-and-load-with-python && uv run python el.py -e && uv run python el.py -l && cd .. && cd transform-with-dbt && uv run dbt deps && uv run dbt seed && uv run dbt build && cd .. && cd create-reports-with-evidence && npm install && npm run sources && npm run dev -- --host 0.0.0.0`_
 
 ## Project Structure
 Each part of the project has a dedicated folder:
 1. The **transform-with-dbt** folder
     - Contains the dbt project
-    - It is from inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
+    - It is from inside this folder that you need to run all dbt commands (for ex. `dbt run`, `dbt debug`, ...)
 3. The **create-reports-with-evidence** folder
     - Contains the [Evidence](https://evidence.dev/) project
     - From inside this folder you can run the commands to launch the Evidence BI dashboards
