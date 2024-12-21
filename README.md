@@ -6,10 +6,11 @@ This project will be used to help train aspiring Analytics Engineers on the fund
 This project runs completely local, or inside of a devcontainer.
 
 ## Quickstart
-1. Install uv
-2. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -el`
-3. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
-4. Go to the `transform-with-dbt` folder and run  `uv run dbt build` 
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (already installed if you're using _Github Codespaces_ or _VS Code Devcontainers_)
+2. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -e`
+3. Go to the `extract-and-load-with-python` folder and run `uv run python el.py -l`
+4. Go to the `transform-with-dbt` folder and run  `uv run dbt deps`
+5. Go to the `transform-with-dbt` folder and run  `uv run dbt build` 
 
 
 ## Setup

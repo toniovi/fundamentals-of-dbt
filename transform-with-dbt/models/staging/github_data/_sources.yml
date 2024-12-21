@@ -1,5 +1,0 @@
-sources:
-  - name: duckdb_data_store
-    schema: raw
-    tables:
-      - name: github_events

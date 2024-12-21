@@ -1,6 +1,12 @@
 version: 2
 
 sources:
+
+  - name: duckdb_data_store
+    schema: raw
+    tables:
+      - name: github_events
+
   - name: ecom
     schema: raw
     description: E-commerce data for the Jaffle Shop
