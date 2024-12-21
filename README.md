@@ -50,10 +50,13 @@ There are a few steps to get started with this project if you want to develop lo
 A straightforward way is to install [VS Code](https://code.visualstudio.com/), [Docker Desktop](https://www.docker.com/products/docker-desktop/) and the [Dev Contaniners](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for VS Code.
 
 Open VS Code, then Cmd+Shift+P (in mac) or Ctrl+Shift+P (in windows) and run _'Dev Containers: Clone Repository in Container Volume...'_
+
 <img width="601" alt="image" src="https://github.com/user-attachments/assets/a8979a55-4d48-41d4-a5e2-3786a184d917" />
+
 <img width="622" alt="image" src="https://github.com/user-attachments/assets/73b95504-ddf9-4da1-ae75-07efc7d01c48" />
 
 Or develop on a GitHub Codespace:
+
 <img width="1131" alt="image" src="https://github.com/user-attachments/assets/e5918c22-6d56-4026-b936-f40aab56a207" />
 
 
