@@ -20,7 +20,7 @@ Each part of the project has a dedicated folder:
 1. **transform-with-dbt** folder
     - It is from inside this folder that you need to run all dbt commands (for ex. 'dbt run', 'dbt debug', ...)
 2. **create-reports-with-evidence** folder
-    - From inside this folder you can launch the commands to launch [Evidence](https://evidence.dev/) dashboards
+    - From inside this folder you can run the commands to launch [Evidence](https://evidence.dev/) dashboards
 3. **extract-and-load-with-python** folder
     - You need to be inside this folder to launch the Extraction and Load script (el.py) that will get github public data into the local Data Warehouse
 4. Inside the **store-and-compute-with-duckdb** is where all the files of the Local duckDB Data Warehouse will be stored.
