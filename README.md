@@ -6,7 +6,7 @@ This repo has been forked from [gwenwindflower's](https://github.com/gwenwindflo
 
 It offers a simple python script to extract and load (EL) data from the [GitHub Archive](https://www.gharchive.org/), a dbt project built on top of this data inside a DuckDB database (and including the [jaffle shop](https://github.com/dbt-labs/jaffle-shop)'s sandbox data and models), and BI tooling via Evidence to analyze and present the data.
 
-This project can run completely local, or inside devcontainer or Github Codespaces.
+This project can run completely local, or inside [dev containers](https://containers.dev/) or [Github Codespaces](https://github.com/features/codespaces).
 
 ## Quickstart
 1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (already installed if you're using _Github Codespaces_ or _VS Code Devcontainers_)
