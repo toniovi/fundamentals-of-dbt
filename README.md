@@ -25,7 +25,7 @@ Each part of the project has a dedicated folder:
     - From inside this folder you can run the commands to launch the Evidence BI dashboards
 5. The **extract-and-load-with-python** folder
     - You need to be inside this folder to run the _Extract and Load_ script (_el.py_) that will get public GitHub data into the local DuckDB Data Warehouse
-6. The **store-and-compute-with-duckdb** is where the Local DuckDB Data Warehouse will be stored (_duckdb_data_store.db_)
+6. The **store-and-compute-with-duckdb** folder is where the Local DuckDB Data Warehouse will be stored (_duckdb_data_store.db_)
 7. The **data-landing-zone** folder will be used for temporarily storing the raw GitHub data, before loading it into the Local DuckDB Data Warehouse
 
 
