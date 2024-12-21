@@ -1,0 +1,1 @@
+select * from dbt_prod.orders limit 10;

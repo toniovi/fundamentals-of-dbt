@@ -1,5 +1,5 @@
 ---
-title: Analyzing Pull Requests
+title: GitHub Data — Analyzing Pull Requests
 ---
 
 ## PRs opened per hour
