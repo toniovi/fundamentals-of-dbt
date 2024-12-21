@@ -19,7 +19,7 @@ This project runs completely local, or inside of a devcontainer or Github Codesp
 
 There are a few steps to get started with this project if you want to develop locally. We'll need to:
 
-1. [Clone the project locally](#-clone-the-project-locally-).
+1. [Clone the project locally](#clone-the-project-locally-).
 2. [Insatll uv (python), then install the dependencies and other tooling](#-python-).
 3. [Extract and load the data locally](#-extract-and-load-).
 4. [Transform the data with dbt](#%EF%B8%8F-transform-the-data-with-dbt-).
